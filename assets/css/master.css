@@ -7,7 +7,6 @@
 body {
   height: 100vh;
 }
-
 /*classe per centrare e dimensionare
 la pagina*/
 .container {
@@ -38,8 +37,7 @@ quando fai Milestone 2*/
   height: 100px;
 }
 /*end debug */
-/*classi utility per larghezza colonne e
-colore sfondi contenuti*/
+/*classi utility per larghezza colonne*/
 .colonna-100 {
   width: 100%;
 }
@@ -49,6 +47,7 @@ colore sfondi contenuti*/
 .colonna-50 {
   width: 50%;
 }
+/*utility per colore sfondo contenuti*/
 .bg-pink {
   background-color: #E579E6;
 }
@@ -60,4 +59,14 @@ colore sfondi contenuti*/
 }
 .bg-blue {
   background-color: #0186FD;
+}
+/*utility padding per colonne*/
+.pt-0 {
+  padding-top: 0;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+.pr-0 {
+  padding-right: 0;
 }
