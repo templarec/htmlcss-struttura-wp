@@ -6,3 +6,35 @@
 body {
   height: 100vh;
 }
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.riga{
+  margin: 0 -5px;
+}
+.riga:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+[class^="colonna-"] {
+  float: left;
+  padding: 10px;
+}
+[class^="colonna-"] > div {
+  height: 100px;
+}
+.colonna-100 {
+  width: 100%;
+}
+.colonna-25 {
+  width: 25%;
+}
+.colonna-50 {
+  width: 50%;
+}
+.bg-pink {
+  background-color: #E579E6;
+}
