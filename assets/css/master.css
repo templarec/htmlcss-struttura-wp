@@ -10,7 +10,7 @@ body {
 /*classe per centrare e dimensionare
 la pagina*/
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 /*margine riga per compensare il
@@ -23,7 +23,6 @@ padding colonne*/
   content: "";
   display: table;
   clear: both;
-
 }
 /* flotto tutte le colonne a sx
 e metto un padding */
@@ -33,7 +32,19 @@ e metto un padding */
 }
 /* altezza per debug, disabilita
 quando fai Milestone 2*/
-[class^="colonna-"] > div {
+header [class^="colonna-"] > div {
+  height: 100px;
+}
+#gallery [class^="colonna-"] > div {
+  height: 300px;
+}
+#articles [class^="colonna-"]:first-child > div{
+  height: 50px;
+}
+#articles [class^="colonna-"] > div{
+  height: 300px;
+}
+footer [class^="colonna-"] > div {
   height: 100px;
 }
 /*end debug */
@@ -41,11 +52,11 @@ quando fai Milestone 2*/
 .colonna-100 {
   width: 100%;
 }
-.colonna-25 {
-  width: 25%;
+.colonna-20 {
+  width: 20%;
 }
-.colonna-50 {
-  width: 50%;
+.colonna-60 {
+  width: 60%;
 }
 /*utility per colore sfondo contenuti*/
 .bg-pink {
