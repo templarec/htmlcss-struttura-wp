@@ -1,3 +1,4 @@
+/* selettori generali*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,26 +7,38 @@
 body {
   height: 100vh;
 }
+/*classe per centrare e dimensionare
+la pagina*/
 .container {
   width: 80%;
   margin: 0 auto;
 }
+/*margine riga per compensare il
+padding colonne*/
 .riga{
-  margin: 0 -5px;
+  margin: 0 -10px;
 }
+/*selettore per clearfix*/
 .riga:after {
   content: "";
   display: table;
   clear: both;
 
 }
+/* flotto tutte le colonne a sx
+e metto un padding */
 [class^="colonna-"] {
   float: left;
   padding: 10px;
 }
+/* altezza per debug, disabilita
+quando fai Milestone 2*/
 [class^="colonna-"] > div {
   height: 100px;
 }
+/*end debug */
+/*classi utility per larghezza colonne e
+colore sfondi contenuti*/
 .colonna-100 {
   width: 100%;
 }
@@ -37,4 +50,7 @@ body {
 }
 .bg-pink {
   background-color: #E579E6;
+}
+.bg-yellow {
+  background-color: #E1D67A;
 }
